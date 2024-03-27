@@ -4,7 +4,6 @@
 
 ::-webkit-scrollbar {
     width: 10px;
-    overflow: scroll;
 } 
 ::-webkit-scrollbar-track {
     background: #424242;
