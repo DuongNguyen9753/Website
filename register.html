@@ -17,7 +17,7 @@
         </script>
     </head>
     <body>
-        <div class="headerbg">
+        <div class="header">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
@@ -41,8 +41,8 @@
                                 <input height="10px" type="text" id="itk" name="itk" placeholder="Nhập tài khoản/Email..."><br>
                                 <label for="mk" id="mk">Mật khẩu:</label><br>
                                 <input type="password" id="imk" name="imk" placeholder="Nhập mật khẩu..."><br>
-                                <p id="linkdk">Bạn không có tài khoản??<a href="./register.html">Đăng ký</a></p>
-                                <button type="submit" id="blogin glow-b">Đăng nhập</button>
+                                <p id="linkdk">Bạn không có tài khoản??<a href="./register.html" id="linktodk">Đăng ký</a></p>
+                                <button type="submit" id="blogin">Đăng nhập</button>
                             </form> 
                         </div>
                     </div>
@@ -55,15 +55,60 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8 menu">
                         <ul>
-                            <li><a href="">Trang chủ</a></li>
-                            <li><a href="">Cửa hàng</a></li>
-                            <li><a href="">Danh mục</a></li>
-                            <li><a href="">Cộng đồng</a></li>
-                            <li><a href="">Hỗ trợ</a></li>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Cửa hàng</a></li>
+                            <li class="dropdown" id="theloai">
+                                <a href="#">Thể Loại</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Hành động</a>
+                                    <a href="#">FPS</a>
+                                    <a href="#">Souls-like</a>
+                                    <a href="#">Side Scroller</a>
+                                    <a href="#">MMORPG</a>
+                                    <a href="#">Phiêu lưu</a>
+                                    <a href="#">Giả lập</a>
+                                    <a href="#">Thể thao</a>
+                                    <a href="#">Chiến thuật</a>
+                                    <a href="#">...</a>
+                                </div>
+                            </li>
+                            <li><a href="#">Cộng đồng</a></li>
+                            <li><a href="#">Hỗ trợ</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-8 menu"></div>
+                    <div class="col-lg-2"></div>
                 </div>   
+            </div>
+        </div>
+        <div class="container mb">
+            <div>Đăng ký</div>
+            <div class="col-lg-8 ">
+                <form class="regform">
+                    <label id="textreg">Email: </label>
+                    <input type="email" id="dkemail" name="dkemail" placeholder="Nhập Email...">
+                    <input type="text" name="dktk" id="dktk">
+                    <input type="password" name="dkmk" id="dkmk">
+                    <input type="password" name="checkmk" id="checkmk">
+                    <input type="text" name="dktk" id="dktk">
+                </form>
+            </div>    
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="col-lg-12 bline">
+                    <a href="./index.html"><img src="./images/logo.png" alt="" class="logof"></a>
+                    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+                </div>
+                <div class="col-lg-12 footertext">
+                    Địa chỉ: 2 Đ. Trường Sa, Phường 17, Bình Thạnh, Thành phố Hồ Chí Minh 70000, Việt Nam<br/>
+                    SĐT: 074375809<br/>
+                    Liên hệ với chúng tôi:
+                    <div class="col-lg-12" style="padding-left: 0px;">
+                        <a href="https://www.facebook.com/profile.php?id=100071299081475"><img src="./images/iconfacebook.png" alt="" class="iconlh"></a>
+                        <a href="https://youtube.com"><img src="./images/iconyoutube.png" alt="" class="iconlh"></a>
+                        <a href="https://github.com/DuongNguyen9753"><img src="./images/icongithub.png" alt="" class="iconlh"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
