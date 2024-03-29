@@ -22,7 +22,6 @@ body{
     background-image: url("../images/bgimgt.png");
 }
 
-
 .header{
     padding:20px;
     font-size:20px;
@@ -146,6 +145,7 @@ body{
 }
 .login:hover p{
     color: #969696;
+    cursor: pointer;
 }
 
 .login{
@@ -159,7 +159,7 @@ body{
     margin-left: -100px;
     margin-top: 5px;
     width: 300px;
-    height: 210px;
+    height: 200px;
     border-radius: 10px;
     background-color: #232323;
     border: 2px solid #2E333A ;
@@ -172,9 +172,11 @@ body{
 .ilbody{
     margin-top: 10px;
 }
-.ilbody>#tk,#mk,#itk,#imk{
+
+.ilbody>.row{
     margin-left: 15px;
 }
+
 #tk, #mk {
     margin-bottom: 0px;
     font-size: 16px;
@@ -402,7 +404,8 @@ body{
     font-size:20px;
     background-color: #18181C;
     width: 100%;
-    bottom: 0;  
+    bottom: 0;
+    left: 0; 
     z-index: 10;
 }
 
@@ -411,16 +414,65 @@ body{
     border-radius: 15px;
     background-color: #202020;
     border: 2px solid #2E333A ;
-
+    width: 100%;
+    padding: 20px 40px;
 }
-.mid{
-    align-items: center;
-    
+.regform label,input{
+    float:left;
 }
 
-/* For mobile devices */
+#textreg{
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+#dkemail,#dktk,#dkmk,#checkmk,#dk-ho,#dk-ten{
+    width: 100%;
+    border-radius: 6px;
+    outline-color:invert;
+    padding: 0px 10px;
+    height: 38px;
+    background-color: #32353C;
+    border: 1px solid #32353C;
+    color: white;
+}
+#dk-ho{
+    margin-right: 10px;
+}
+.p-l-30{
+    padding-left: 30px;
+}
+#dk-btn{    
+    width: 95px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.dk-btn-row{
+    display: flex;
+    justify-content: flex-end;
+}
+
+sup{
+    color: red;
+}
+.ten-dm-dk {
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    padding: 40px;
+}
+#checkage-text{
+    color: white;
+    margin-left: 8px;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+/* điện thoại */
 @media (max-width: 767px) {
-    /* CSS rules for mobile layout */ 
     .menu{
         visibility: hidden;
     }
@@ -451,9 +503,8 @@ body{
     }
 }
     
-/* For tablets */
+/* tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
-    /* CSS rules for tablet layout */
     .menu{
         visibility: hidden;
     }
@@ -484,9 +535,7 @@ body{
     }
 }
 
-/* For PCs */
+/* PC */
 @media (min-width: 1024px) {
-    
-    /* CSS rules for PC layout */
-    
+        
 }
