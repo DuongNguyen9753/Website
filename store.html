@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>Duong's Shop</title>
+        <link rel="icon" type="image/x-icon" href="./images/weblogo.png">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/thuvien.css">
+        
+        <script src="./js/jquery-3.7.0.min.js"></script>
+        <script src="./js/script.js"></script>
+
+        <!--Online-->
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <script src="https://kit.fontawesome.com/805c36561d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>       
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-3">
+                        <a href="./index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="search-box">
+                            <input type="text" placeholder="Tìm kiếm...">
+                            <button type="submit"><img src="./feather/search.svg"></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="mtb10 row">
+                            <div class="circle-icon login"><img src="./feather/user.svg" alt="User" class=""></div>
+                            <div class="back login tp"><p>Đăng nhập</p></div><div class="back tp">|</div>
+                            <a href="./cart.html"><div class="circle-icon back"><img src="./feather/shopping-cart.svg" alt="Cart" class=""></div></a>
+                        </div>
+                        <div class="inputlogin">
+                            <form class="col-lg-12 ilbody" style="margin-top: 10px; padding-left: 15px;" >
+                                <div class="row">
+                                    <label for="tk" id="tk">Tài khoản:</label>
+                                </div>
+                                <div class="row">
+                                    <input height="10px" type="text" id="itk" name="itk" placeholder="Nhập tài khoản/Email...">
+                                </div>
+                                <div class="row">
+                                    <label for="mk" id="mk">Mật khẩu:</label>
+                                </div>
+                                <div class="row">
+                                    <input type="password" id="imk" name="imk" placeholder="Nhập mật khẩu...">
+                                </div>
+                                <div class="row linkdk">
+                                    <p id="linkdk">Bạn không có tài khoản??<a href="./register.html" id="linktodk">Đăng ký</a></p>
+                                </div>
+                                <button type="submit" id="blogin">Đăng nhập</button>
+                            </form> 
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="thanhmenu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8 menu">
+                        <ul>
+                            <li><a href="./index.html" >Trang chủ</a></li>
+                            <li><a href="./store.html">Cửa hàng</a></li>
+                            <li class="dropdown" id="theloai">
+                                <a href="#">Thể Loại</a>
+                                <div class="dropdown-content">
+                                    <a href="./product.html">Hành động</a>
+                                    <a href="./product.html">FPS</a>
+                                    <a href="./product.html">Souls-like</a>
+                                    <a href="./product.html">Side Scroller</a>
+                                    <a href="./product.html">MMORPG</a>
+                                    <a href="./product.html">Phiêu lưu</a>
+                                    <a href="./product.html">Giả lập</a>
+                                    <a href="./product.html">Thể thao</a>
+                                    <a href="./product.html">Chiến thuật</a>
+                                    <a href="./product.html">...</a>
+                                </div>
+                            </li>
+                            <li><a href="./community.html">Cộng đồng</a></li>
+                            <li><a href="./support.html">Hỗ trợ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>   
+            </div>
+        </div>
+        <!--Body-->
+        <div class="container mb">
+            <div class="row">
+                <div class="col-lg-9 row">  
+                    <div class="col-lg-12 tieude-store">
+                        <h3>Những tựa game phổ biến</h3>
+                    </div>          
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb1_AlanWake2.png" alt="" class="spimg-store">
+                            <p class="tensp-store">Alan Wake 2</p>
+                            <p class="giasp-store">700.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb2_DeadIsland2.png" alt="" class="spimg-store">
+                            <p class="tensp-store">Dead Island 2</p>
+                            <p class="giasp-store">550.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb3_RDR2.png" alt="" class="spimg-store">
+                            <p class="tensp-store">Red Dead Redemption 2</p>
+                            <p class="giasp-store">1.000.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb4_TheWitcher3WildHuntCompleteEdition.png" alt="" class="spimg-store">
+                            <p class="tensp-store">The Witcher 3: Wild Hunt - Complete Edition</p>
+                            <p class="giasp-store">500.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb1_AlanWake2.png" alt="" class="spimg-store">
+                            <p class="tensp-store">Alan Wake 2</p>
+                            <p class="giasp-store">700.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb2_DeadIsland2.png" alt="" class="spimg-store">
+                            <p class="tensp-store">Dead Island 2</p>
+                            <p class="giasp-store">550.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb3_RDR2.png" alt="" class="spimg-store">
+                            <p class="tensp-store">Red Dead Redemption 2</p>
+                            <p class="giasp-store">1.000.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb4_TheWitcher3WildHuntCompleteEdition.png" alt="" class="spimg-store">
+                            <p class="tensp-store">The Witcher 3: Wild Hunt - Complete Edition</p>
+                            <p class="giasp-store">500.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb1_AlanWake2.png" alt="" class="spimg-store">
+                            <p class="tensp-store">Alan Wake 2</p>
+                            <p class="giasp-store">700.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb2_DeadIsland2.png" alt="" class="spimg-store">
+                            <p class="tensp-store">Dead Island 2</p>
+                            <p class="giasp-store">550.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb3_RDR2.png" alt="" class="spimg-store">
+                            <p class="tensp-store">Red Dead Redemption 2</p>
+                            <p class="giasp-store">1.000.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 sp-store">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb4_TheWitcher3WildHuntCompleteEdition.png" alt="" class="spimg-store">
+                            <p class="tensp-store">The Witcher 3: Wild Hunt - Complete Edition</p>
+                            <p class="giasp-store">500.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 d-flex pagination">
+                        <ul>
+                            <li><a href="#" style="text-decoration: none;" class="active-pag">1</a></li>
+                            <li><a href="#" style="text-decoration: none;" class="unactive-pag">2</a></li>
+                            <li><a href="#" style="text-decoration: none;" class="unactive-pag">3</a></li>
+                            <li><a href="#" style="text-decoration: none;" class="unactive-pag">4</a></li>
+                            <li><p>...</p></li>
+                            <li><a href="#" style="text-decoration: none;" class="unactive-pag">n</a></li>
+                            <li><a href="#" style="text-decoration: none;" class="unactive-pag">></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 filter">
+                    <!--Filter tien-->
+                    <div class="col-lg-12 filter-wrapper">
+                        <div class="row mo-filter-tien">
+                            <div class="col-lg-10 tendm-filter">
+                                Giá
+                            </div>
+                            <div class="col-lg-2 arrow">
+                                <i class="fa-solid fa-angle-down fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="list-filter-tien">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Miễn phí</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Ít hơn 100.000đ</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Ít hơn 500.000đ</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Filter thoi gian phat hanh-->
+                    <div class="col-lg-12 filter-wrapper">
+                        <div class="row mo-filter-tgphathanh">
+                            <div class="col-lg-10 tendm-filter">
+                                Thời gian phát hành
+                            </div>
+                            <div class="col-lg-2 arrow">
+                                <i class="fa-solid fa-angle-down fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="list-filter-tgphathanh">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Gần đây</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">1 tháng trước</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">1 năm trước</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Filter the loai-->
+                    <div class="col-lg-12 filter-wrapper">
+                        <div class="row mo-filter-theloai">
+                            <div class="col-lg-10 tendm-filter ">
+                                Thể loại
+                            </div>
+                            <div class="col-lg-2 arrow">
+                                <i class="fa-solid fa-angle-down fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="list-filter-theloai">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Hành động</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">FPS</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Souls-like</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Side Scroller</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">MMORPG</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Phiêu lưu</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Giả lập</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Thể thao</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Chiến thuật</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Filter nen tang-->
+                    <div class="col-lg-12 filter-wrapper">
+                        <div class="row mo-filter-nentang">
+                            <div class="col-lg-10 tendm-filter ">
+                                Nền tảng
+                            </div>
+                            <div class="col-lg-2 arrow">
+                                <i class="fa-solid fa-angle-down fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="list-filter-nentang">
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Windows</div>
+                            </a>
+                            <a href="#" style="text-decoration: none;">
+                                <div class="sublist-filter">Mac OS</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="col-lg-12 bline">
+                    <a href="./index.html"><img src="./images/logo.png" alt="" class="logof"></a>
+                    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+                </div>
+                <div class="col-lg-12 footertext">
+                    Địa chỉ: 2 Đ. Trường Sa, Phường 17, Bình Thạnh, Thành phố Hồ Chí Minh 70000, Việt Nam<br/>
+                    SĐT: 074375809<br/>
+                    Liên hệ với chúng tôi:
+                    <div class="col-lg-12" style="padding-left: 0px;">
+                        <a href="https://www.facebook.com/profile.php?id=100071299081475"><img src="./images/iconfacebook.png" alt="" class="iconlh"></a>
+                        <a href="https://youtube.com"><img src="./images/iconyoutube.png" alt="" class="iconlh"></a>
+                        <a href="https://github.com/DuongNguyen9753"><img src="./images/icongithub.png" alt="" class="iconlh"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

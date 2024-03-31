@@ -66,6 +66,7 @@ body{
 .dropdown-content a:hover {
     background-color: #f1f1f1;
     text-decoration: none;
+    color: black;
 }
   
 .dropdown:hover .dropdown-content {
@@ -469,6 +470,163 @@ sup{
     margin-left: 8px;
     font-size: 14px;
     margin-top: 7px;
+}
+
+/* store.html */
+.sp-store{
+    margin-bottom: 20px;
+    padding: 0px 5px;
+}
+.tensp-store{
+    color: white;
+    margin: 15px 10px 10px 10px;
+    font-size: 14px;
+}
+.giasp-store{
+    color: rgb(222, 222, 222);
+    margin: 10px 10px 10px 10px;
+    font-size: 12px;
+}
+.spimg-store{
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+}
+.spimg-store:hover {
+    transition-timing-function: ease;
+    transition: all .3s;
+    filter: brightness(1.2);
+}
+
+.tieude-store{
+    color: white;
+    margin: 30px 50px 15px -10px;
+    font-size: 22px;
+}
+
+.filter{
+    margin-top: 77px;
+    color: white;
+}
+.filter-wrapper{
+    padding-top: 20px;
+    border-bottom: 2px solid #424242;
+}
+.tendm-filter{
+    margin-bottom: 13px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #969696;
+}
+
+.mo-filter-tien:hover .tendm-filter{
+    color: white;
+}
+.mo-filter-tien:hover i{
+    color: white;
+}
+.mo-filter-tgphathanh:hover .tendm-filter{
+    color: white;
+}
+.mo-filter-tgphathanh:hover i{
+    color: white;
+}
+.mo-filter-theloai:hover .tendm-filter{
+    color: white;
+}
+.mo-filter-theloai:hover i{
+    color: white;
+}
+.mo-filter-nentang:hover .tendm-filter{
+    color: white;
+}
+.mo-filter-nentang:hover i{
+    color: white;
+}
+
+.list-filter-tien{
+    display: none;
+}
+.list-filter-tgphathanh{
+    display: none;
+}
+.list-filter-theloai{
+    display: none;
+}
+.list-filter-nentang{
+    display: none;
+}
+.sublist-filter{
+    margin: 7px;
+    padding: 13px;
+    color: #969696;
+}
+.sublist-filter-chon{
+    background-color: #5D5D5D;
+}
+.sublist-filter:hover{
+    background-color: #5D5D5D;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.arrow{
+    float: right;
+    align-content: center;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+i.fa {
+  cursor: pointer;
+}
+.arrow i{
+    color: #969696;
+}
+
+.pagination{
+    text-align: center;
+    justify-content: center;
+}
+
+.pagination li{
+    float: inline-start;
+}
+
+.pagination .unactive-pag:focus {
+    color: #969696;
+}
+
+.active-pag{
+    margin: 5px 15px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+.active-pag:hover{
+    margin: 5px 15px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.pagination p{
+    margin: 5px 15px;
+    color: #969696;
+}
+
+.unactive-pag{
+    margin: 5px 12px;
+    color: #969696;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.unactive-pag:hover{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
 }
 
 /* điện thoại */
