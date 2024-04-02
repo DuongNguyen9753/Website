@@ -33,3 +33,8 @@ $(document).ready(function(){
   })
 });
 
+$('.phobien-slider').flickity({
+  // options
+  cellAlign: 'center',
+  contain: true
+});

@@ -6,6 +6,7 @@
         
         <!-- Required meta tags -->
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
         <link rel="stylesheet" href="./css/bootstrap.css">
@@ -16,12 +17,18 @@
         <script src="./js/bootstrap.min.js"></script>
         <script src="./js/script.js"></script>
 
+        <!-- slider Plugin-->
+        <link rel="stylesheet" href="./css/flickity.css" media="screen">
+        <script src="./js/flickity.pkgd.min.js"></script>
         <!--Online-->
         <script src="https://kit.fontawesome.com/805c36561d.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <body>  
+
+    </head>
+    
+    <body> 
         <div class="header">
             <div class="container">
                 <div class="row ">
@@ -91,20 +98,21 @@
                             <li><a href="./support.html">Hỗ trợ</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2"></div>
+                    <div class="col-lg-2 menu-mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>   
             </div>
         </div>
-        <div class="container mb">
+        <div class="container">
             <div class="row"> 
-                <div id="slider" class="carousel slide" data-ride="carousel">
+                <div id="slider" class="carousel slide d-flex" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <li data-target="#slider" data-slide-to="0" class="active"></li>
                         <li data-target="#slider" data-slide-to="1"></li>
                         <li data-target="#slider" data-slide-to="2"></li>
-                        </ol>
-                
+                    </ol>                
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner ">
                         <div class="item active brslider">
@@ -132,6 +140,199 @@
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="container mb main-mobile">
+            <div>
+                <div class="col-lg-12 tendm-mobile">
+                    <h4>Những tựa game phổ biến</h4>
+                </div>
+                <div class="phobien-slider" data-flickity='{ 
+                    "cellAlign": "center", "contain": true, "draggable": true, 
+                    "wrapAround": true, "prevNextButtons": false }'>
+                    <div class="cell">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb1_AlanWake2.png" alt="" class="spimg">
+                            <p class="tensp">Alan Wake 2</p>
+                            <p class="giasp">700.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb2_DeadIsland2.png" alt="" class="spimg">
+                            <p class="tensp">Dead Island 2</p>
+                            <p class="giasp">550.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb3_RDR2.png" alt="" class="spimg">
+                            <p class="tensp">Red Dead Redemption 2</p>
+                            <p class="giasp">1.000.000 đ</p>
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spnb4_TheWitcher3WildHuntCompleteEdition.png" alt="" class="spimg">
+                            <p class="tensp">The Witcher 3: Wild Hunt - Complete Edition</p>
+                            <p class="giasp">500.000 đ</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-lg-12 tendm-mobile">
+                    <h4>Những thể loại game phổ biến</h4>
+                </div>
+                <div class="theloai-slider" data-flickity='{ 
+                    "cellAlign": "left", "contain": true, "draggable": true, 
+                    "prevNextButtons": false }'>
+                    <div class="cell">
+                        <a href="#" style="text-decoration: none;"><h5 class="tentl">Souls-like</h5></a>
+                        <ul>
+                            <li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spsl1_SekiroShadowDieTwice.png" alt="Sekiro: Shadows Die Twice" class="spimg-tlbar himgtlbar">
+                                        <div class="htlbar"><p class="tensp-tlbar">Sekiro: Shadows Die Twice</p>
+                                        <p class="giasp-tlbar">1.290.000 đ</p></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spsl2_EldenRing.png" alt="Elden Ring" class="spimg-tlbar himgtlbar">
+                                        <div class="htlbar"><p class="tensp-tlbar">Elden Ring</p>
+                                        <p class="giasp-tlbar">990.000 đ</p></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spsl3_LieOfP.png" alt="Lie of P" class="spimg-tlbar himgtlbar">
+                                        <div class="htlbar"><p class="tensp-tlbar">Lie of P</p>
+                                        <p class="giasp-tlbar">1.050.000 đ</p></div>
+                                    </div>
+                                </a>
+                            </li><li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spsl4_DarkSoul3.png" alt="Dark Soul 3" class="spimg-tlbar himgtlbar">
+                                        <div class="htlbar"><p class="tensp-tlbar">Dark Soul III</p>
+                                        <p class="giasp-tlbar">970.000 đ</p></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cell midcol">
+                        <a href="#" style="text-decoration: none;"><h5 class="tentl">Side Scroller</h5></a>
+                        <ul>
+                            <li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spss1_MegaMan11.png" alt="Mega Man 11" class="spimg-tlbar himgtlbar">
+                                        <div><p class="tensp-tlbar">Mega Man 11</p>
+                                        <p class="giasp-tlbar">400.000 đ</p></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spss2_CupHead.png" alt="Cup Head" class="spimg-tlbar himgtlbar">
+                                        <div><p class="tensp-tlbar">Cup Head</p>
+                                        <p class="giasp-tlbar">188.000 đ</p></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spss3_HollowKnight.png" alt="Hollow Knight" class="spimg-tlbar himgtlbar">
+                                        <div><p class="tensp-tlbar">Hollow Knight</p>
+                                        <p class="giasp-tlbar">165.000 đ</p></div>
+                                    </div>
+                                </a>
+                            </li><li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spss4_Celeste.png" alt="Celeste" class="spimg-tlbar himgtlbar">
+                                        <div><p class="tensp-tlbar">Celeste</p>
+                                        <p class="giasp-tlbar">260.000 đ</p></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cell">
+                        <a href="#" style="text-decoration: none;"><h5 class="tentl">MMORPG</h5></a>
+                        <ul>
+                            <li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spmmorpg1_GuildWars2.png" alt="Guild Wars 2" class="spimg-tlbar himgtlbar">
+                                        <div><p class="tensp-tlbar">Guild Wars 2</p>
+                                        <p class="giasp-tlbar">Free</p></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spmmorpg2_TheElderScrollOnline.png" alt="The Elder Scroll Online" class="spimg-tlbar himgtlbar">
+                                        <div><p class="tensp-tlbar">The Elder Scroll Online</p>
+                                        <p class="giasp-tlbar">450.000 đ</p></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spmmorpg3_FinalFantasyXIVOnline.png" alt="Final Fantasy XIV Online" class="spimg-tlbar himgtlbar">
+                                        <div ><p class="tensp-tlbar">Final Fantasy XIV Online</p>
+                                        <p class="giasp-tlbar">495.000 đ</p></div>
+                                    </div>
+                                </a>
+                            </li><li class="row">
+                                <a href="#" style="text-decoration: none;">
+                                    <div style="display:flex; align-items:start; ">
+                                        <img src="./images/spmmorpg4_AlbionOnline.jpg" alt="Albion Online" class="spimg-tlbar himgtlbar">
+                                        <div><p class="tensp-tlbar">Albion Online</p>
+                                        <p class="giasp-tlbar">Free</p></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-lg-12 tendm-mobile">
+                    <h4>Những tựa game sắp ra mắt</h4>
+                </div>
+                <div class="sapramat-slider" data-flickity='{ 
+                    "cellAlign": "center", "contain": true, "draggable": true, 
+                    "wrapAround": true, "prevNextButtons": false }'>
+                    <div class="cell">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spsrm2_BlackMistWukong.png" alt="" class="spimg">
+                            <p class="tenspsrm">Black Mist Wukong</p>
+                            <p class="giaspsrm">Coming Soon</p>
+                        </a>
+                    </div>
+                    <div class="cell">
+                        <a href="#" style="text-decoration: none;" class="hsp">
+                            <img src="./images/spsrm1_HadesII.png" alt="" class="spimg">
+                            <p class="tenspsrm">Hades II</p>
+                            <p class="giaspsrm">Coming Soon</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb main">
             <div class="row">
                 <div class="col-lg-12 tendm">
                     <h3>Những tựa game phổ biến</h3>
@@ -306,13 +507,12 @@
                         <p class="giaspsrm">Coming Soon</p>
                     </a>
                 </div>
-            </div>
+            </div>       
         </div>
         <div class="footer">
             <div class="container">
                 <div class="col-lg-12 bline">
                     <a href="./index.html"><img src="./images/logo.png" alt="" class="logof"></a>
-                    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
                 </div>
                 <div class="col-lg-12 footertext">
                     Địa chỉ: 2 Đ. Trường Sa, Phường 17, Bình Thạnh, Thành phố Hồ Chí Minh 70000, Việt Nam<br/>
