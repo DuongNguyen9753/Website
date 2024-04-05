@@ -31,24 +31,64 @@
     <body> 
         <div class="header">
             <div class="container">
-                <div class="row ">
+                <div class="row headbar-mobile">
+                    <div class="col-sm-12">
+                        <a href="./index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <form class="search-box">
+                                <input type="text" placeholder="Tìm kiếm...">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <div class="col login-wrapper">
+                            <div class="mtb10 row">
+                                <div class="circle-icon login"><img src="./feather/user.svg" alt="User" class=""></div>
+                                <div class="back tp">|</div>
+                                <a href="./cart.html"><div class="circle-icon back"><img src="./feather/shopping-cart.svg" alt="Cart" class=""></div></a>
+                            </div>
+                            <div class="inputlogin">
+                                <form class="col-lg-12 ilbody" style="margin-top: 2%; padding-left: 15px;" >
+                                    <div class="row">
+                                        <label for="tk" id="tk">Tài khoản:</label>
+                                    </div>
+                                    <div class="row">
+                                        <input height="10px" type="text" id="itk" name="itk" placeholder="Nhập tài khoản/Email...">
+                                    </div>
+                                    <div class="row">
+                                        <label for="mk" id="mk">Mật khẩu:</label>
+                                    </div>
+                                    <div class="row">
+                                        <input type="password" id="imk" name="imk" placeholder="Nhập mật khẩu...">
+                                    </div>
+                                    <div class="row linkdk">
+                                        <p id="linkdk">Bạn không có tài khoản??<a href="./register.html" id="linktodk">Đăng ký</a></p>
+                                    </div>
+                                    <button type="submit" id="blogin">Đăng nhập</button>
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="row headbar">
                     <div class="col-lg-3">
                         <a href="./index.html"><img src="./images/logo.png" alt="" class="logo"></a>
                     </div>
                     <div class="col-lg-6">
                         <div class="search-box">
                             <input type="text" placeholder="Tìm kiếm...">
-                            <button type="submit"><img src="./feather/search.svg"></button>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 login-wrapper">
                         <div class="mtb10 row">
                             <div class="circle-icon login"><img src="./feather/user.svg" alt="User" class=""></div>
                             <div class="back login tp"><p>Đăng nhập</p></div><div class="back tp">|</div>
                             <a href="./cart.html"><div class="circle-icon back"><img src="./feather/shopping-cart.svg" alt="Cart" class=""></div></a>
                         </div>
                         <div class="inputlogin">
-                            <form class="col-lg-12 ilbody" style="margin-top: 10px; padding-left: 15px;" >
+                            <form class="col-lg-12 ilbody" style="margin-top: 2%; padding-left: 15px;" >
                                 <div class="row">
                                     <label for="tk" id="tk">Tài khoản:</label>
                                 </div>
@@ -74,8 +114,7 @@
         <div class="thanhmenu">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8 menu">
+                    <div class="col-lg-12 menu">
                         <ul>
                             <li><a href="./index.html" >Trang chủ</a></li>
                             <li><a href="./store.html">Cửa hàng</a></li>
@@ -98,14 +137,39 @@
                             <li><a href="./support.html">Hỗ trợ</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 menu-mobile">
+                    <div class="col-lg-12 menu-mobile">
                         <i class="fa-solid fa-bars"></i>
                     </div>
-                </div>   
+                </div>
+                <div class="dropdown-menu-mobile">
+                    <ul>
+                        <li class="menu-bot-line menu-padding"><a href="./index.html" >Trang chủ</a></li>
+                        <li class="menu-bot-line menu-padding"><a href="./store.html">Cửa hàng</a></li>
+                        <li class="dropdown-mobile menu-padding" id="theloai">
+                            <a>Thể Loại</a>
+                        </li>
+                        <li class="menu-bot-line">
+                            <div class="dropdown-content-mobile">
+                                <div><a href="./product.html">Hành động</a></div>
+                                <div><a href="./product.html">FPS</a></div>
+                                <div><a href="./product.html">Souls-like</a></div>
+                                <div><a href="./product.html">Side Scroller</a></div>
+                                <div><a href="./product.html">MMORPG</a></div>
+                                <div><a href="./product.html">Phiêu lưu</a></div>
+                                <div><a href="./product.html">Giả lập</a></div>
+                                <div><a href="./product.html">Thể thao</a></div>
+                                <div><a href="./product.html">Chiến thuật</a></div>
+                                <div><a href="./product.html">...</a></div>
+                            </div>
+                        </li>
+                        <li class="menu-bot-line menu-padding"><a href="./community.html">Cộng đồng</a></li>
+                        <li class="menu-bot-line menu-padding"><a href="./support.html">Hỗ trợ</a></li>
+                    </ul>
+                </div>           
             </div>
         </div>
         <div class="container">
-            <div class="row"> 
+            <div class="row main-slider"> 
                 <div id="slider" class="carousel slide d-flex" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -138,6 +202,29 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                     <span class="sr-only">Next</span>
                     </a>
+                </div>
+            </div>
+            <div class="main-slider-mobile">
+                <div>
+                    <div class="banner-mobile" data-flickity='{ 
+                        "cellAlign": "center", "contain": true, "draggable": true, 
+                        "wrapAround": true, "prevNextButtons": false, "autoPlay": true }'>
+                        <div class="cell">
+                            <div class="item active brslider">
+                                <img src="./images/slide1-m.png" style="width:100%; border-radius: 25px;">
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="item active brslider">
+                                <img src="./images/slide2-m.png" style="width:100%; border-radius: 25px;">
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="item active brslider">
+                                <img src="./images/slide3-m.png" style="width:100%; border-radius: 25px;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

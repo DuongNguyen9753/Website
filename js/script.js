@@ -12,6 +12,18 @@ $(document).ready(function(){
   })
 });
 
+// open mobile menu
+$(document).ready(function(){
+  $(".menu-mobile").click(function(){
+    $(".dropdown-menu-mobile").slideToggle("slow");      
+  })
+});
+$(document).ready(function(){
+  $(".dropdown-mobile").click(function(){
+    $(".dropdown-content-mobile").slideToggle("slow");      
+  })
+});
+
 $(document).ready(function(){
   $(".mo-filter-tgphathanh").click(function(x){
     $(".list-filter-tgphathanh").slideToggle("slow");
@@ -38,3 +50,4 @@ $('.phobien-slider').flickity({
   cellAlign: 'center',
   contain: true
 });
+
