@@ -26,24 +26,64 @@
         <!--Header-->
         <div class="header">
             <div class="container">
-                <div class="row ">
+                <div class="row headbar-mobile">
+                    <div class="col-sm-12">
+                        <a href="./index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <form class="search-box">
+                                <input type="text" placeholder="Tìm kiếm...">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <div class="col login-wrapper">
+                            <div class="mtb10 row">
+                                <div class="circle-icon login"><img src="./feather/user.svg" alt="User" class=""></div>
+                                <div class="back tp">|</div>
+                                <a href="./cart.html"><div class="circle-icon back"><img src="./feather/shopping-cart.svg" alt="Cart" class=""></div></a>
+                            </div>
+                            <div class="inputlogin">
+                                <form class="col-lg-12 ilbody" style="margin-top: 2%; padding-left: 15px;" >
+                                    <div class="row">
+                                        <label for="tk" id="tk">Tài khoản:</label>
+                                    </div>
+                                    <div class="row">
+                                        <input height="10px" type="text" id="itk" name="itk" placeholder="Nhập tài khoản/Email...">
+                                    </div>
+                                    <div class="row">
+                                        <label for="mk" id="mk">Mật khẩu:</label>
+                                    </div>
+                                    <div class="row">
+                                        <input type="password" id="imk" name="imk" placeholder="Nhập mật khẩu...">
+                                    </div>
+                                    <div class="row linkdk">
+                                        <p id="linkdk">Bạn không có tài khoản??<a href="./register.html" id="linktodk">Đăng ký</a></p>
+                                    </div>
+                                    <button type="submit" id="blogin">Đăng nhập</button>
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="row headbar">
                     <div class="col-lg-3">
                         <a href="./index.html"><img src="./images/logo.png" alt="" class="logo"></a>
                     </div>
                     <div class="col-lg-6">
                         <div class="search-box">
                             <input type="text" placeholder="Tìm kiếm...">
-                            <button type="submit"><img src="./feather/search.svg"></button>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 login-wrapper">
                         <div class="mtb10 row">
                             <div class="circle-icon login"><img src="./feather/user.svg" alt="User" class=""></div>
                             <div class="back login tp"><p>Đăng nhập</p></div><div class="back tp">|</div>
                             <a href="./cart.html"><div class="circle-icon back"><img src="./feather/shopping-cart.svg" alt="Cart" class=""></div></a>
                         </div>
                         <div class="inputlogin">
-                            <form class="col-lg-12 ilbody" style="margin-top: 10px; padding-left: 15px;" >
+                            <form class="col-lg-12 ilbody" style="margin-top: 2%; padding-left: 15px;" >
                                 <div class="row">
                                     <label for="tk" id="tk">Tài khoản:</label>
                                 </div>
@@ -92,13 +132,40 @@
                             <li><a href="./support.html">Hỗ trợ</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-12"></div>
-                </div>   
+                    <div class="col-lg-12 menu-mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="dropdown-menu-mobile">
+                    <ul>
+                        <li class="menu-bot-line menu-padding"><a href="./index.html" >Trang chủ</a></li>
+                        <li class="menu-bot-line menu-padding"><a href="./store.html">Cửa hàng</a></li>
+                        <li class="dropdown-mobile menu-padding" id="theloai">
+                            <a>Thể Loại</a>
+                        </li>
+                        <li class="menu-bot-line">
+                            <div class="dropdown-content-mobile">
+                                <div><a href="./product.html">Hành động</a></div>
+                                <div><a href="./product.html">FPS</a></div>
+                                <div><a href="./product.html">Souls-like</a></div>
+                                <div><a href="./product.html">Side Scroller</a></div>
+                                <div><a href="./product.html">MMORPG</a></div>
+                                <div><a href="./product.html">Phiêu lưu</a></div>
+                                <div><a href="./product.html">Giả lập</a></div>
+                                <div><a href="./product.html">Thể thao</a></div>
+                                <div><a href="./product.html">Chiến thuật</a></div>
+                                <div><a href="./product.html">...</a></div>
+                            </div>
+                        </li>
+                        <li class="menu-bot-line menu-padding"><a href="./community.html">Cộng đồng</a></li>
+                        <li class="menu-bot-line menu-padding"><a href="./support.html">Hỗ trợ</a></li>
+                    </ul>
+                </div>           
             </div>
         </div>
         <!--Body-->
         <div class="container mb">
-            <div class="row">
+            <div class="row store-body">
                 <div class="col-lg-9 row">  
                     <div class="col-lg-12 tieude-store">
                         <h3>Những tựa game phổ biến</h3>
@@ -302,6 +369,233 @@
                                 <div class="sublist-filter">Mac OS</div>
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row store-body-mobile">
+                <div class="col-lg-12">  
+                    <div class="col-lg-12 tieude-store-mobile">
+                        <h3>Những tựa game phổ biến</h3>
+                    </div>
+                    <!--Filter Button-->
+                    <div class="col-lg-12 row filter_icon">
+                        <p class="filter-icon-btn">Lọc</p>
+                        <i class="fa-solid fa-bars filter-icon-btn" ></i> 
+                    </div>    
+                    <!--Filter-->
+                    <div class="col-lg-12 filter-mobile">
+                        <!--Filter tien-->
+                        <div class="col-lg-12 filter-wrapper-mobile">
+                            <div class="row mo-filter-tien">
+                                <div class="col tendm-filter-mobile">
+                                    Giá
+                                </div>
+                                <div class="col arrow-mobile">
+                                    <i class="fa-solid fa-angle-down fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="list-filter-tien">
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Miễn phí</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Ít hơn 100.000đ</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Ít hơn 500.000đ</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--Filter thoi gian phat hanh-->
+                        <div class="col-lg-12 filter-wrapper-mobile">
+                            <div class="row mo-filter-tgphathanh">
+                                <div class="col-auto tendm-filter-mobile">
+                                    Thời gian phát hành
+                                </div>
+                                <div class="col arrow-mobile">
+                                    <i class="fa-solid fa-angle-down fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="list-filter-tgphathanh">
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Gần đây</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">1 tháng trước</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">1 năm trước</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--Filter the loai-->
+                        <div class="col-lg-12 filter-wrapper-mobile">
+                            <div class="row mo-filter-theloai">
+                                <div class="col tendm-filter-mobile">
+                                    Thể loại
+                                </div>
+                                <div class="col arrow-mobile">
+                                    <i class="fa-solid fa-angle-down fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="list-filter-theloai">
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Hành động</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">FPS</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Souls-like</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Side Scroller</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">MMORPG</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Phiêu lưu</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Giả lập</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Thể thao</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Chiến thuật</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--Filter nen tang-->
+                        <div class="col-lg-12 filter-wrapper-mobile">
+                            <div class="row mo-filter-nentang">
+                                <div class="col tendm-filter-mobile">
+                                    Nền tảng
+                                </div>
+                                <div class="col arrow-mobile">
+                                    <i class="fa-solid fa-angle-down fa-lg"></i>
+                                </div>
+                            </div>
+                            <div class="list-filter-nentang">
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Windows</div>
+                                </a>
+                                <a href="#" style="text-decoration: none;">
+                                    <div class="sublist-filter">Mac OS</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--San pham-->
+                    <div class="row sp-mobile">
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb1_AlanWake2.png" alt="" class="spimg-store">
+                                <p class="tensp-store">Alan Wake 2</p>
+                                <p class="giasp-store">700.000 đ</p>
+                            </a>
+                        </div>
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb2_DeadIsland2.png" alt="" class="spimg-store">
+                                <p class="tensp-store">Dead Island 2</p>
+                                <p class="giasp-store">550.000 đ</p>
+                            </a>
+                        </div>    
+                    </div>
+                    <div class="row sp-mobile">
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb3_RDR2.png" alt="" class="spimg-store">
+                                <p class="tensp-store">Red Dead Redemption 2</p>
+                                <p class="giasp-store">1.000.000 đ</p>
+                            </a>
+                        </div>
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb4_TheWitcher3WildHuntCompleteEdition.png" alt="" class="spimg-store">
+                                <p class="tensp-store">The Witcher 3: Wild Hunt - Complete Edition</p>
+                                <p class="giasp-store">500.000 đ</p>
+                            </a>
+                        </div>    
+                    </div>
+                    <div class="row sp-mobile">
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb1_AlanWake2.png" alt="" class="spimg-store">
+                                <p class="tensp-store">Alan Wake 2</p>
+                                <p class="giasp-store">700.000 đ</p>
+                            </a>
+                        </div>
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb2_DeadIsland2.png" alt="" class="spimg-store">
+                                <p class="tensp-store">Dead Island 2</p>
+                                <p class="giasp-store">550.000 đ</p>
+                            </a>
+                        </div>    
+                    </div>
+                    <div class="row sp-mobile">
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb3_RDR2.png" alt="" class="spimg-store">
+                                <p class="tensp-store">Red Dead Redemption 2</p>
+                                <p class="giasp-store">1.000.000 đ</p>
+                            </a>
+                        </div>
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb4_TheWitcher3WildHuntCompleteEdition.png" alt="" class="spimg-store">
+                                <p class="tensp-store">The Witcher 3: Wild Hunt - Complete Edition</p>
+                                <p class="giasp-store">500.000 đ</p>
+                            </a>
+                        </div>    
+                    </div>
+                    <div class="row sp-mobile">
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb1_AlanWake2.png" alt="" class="spimg-store">
+                                <p class="tensp-store">Alan Wake 2</p>
+                                <p class="giasp-store">700.000 đ</p>
+                            </a>
+                        </div>
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb2_DeadIsland2.png" alt="" class="spimg-store">
+                                <p class="tensp-store">Dead Island 2</p>
+                                <p class="giasp-store">550.000 đ</p>
+                            </a>
+                        </div>    
+                    </div>
+                    <div class="row sp-mobile">
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb3_RDR2.png" alt="" class="spimg-store">
+                                <p class="tensp-store">Red Dead Redemption 2</p>
+                                <p class="giasp-store">1.000.000 đ</p>
+                            </a>
+                        </div>
+                        <div class="col sp-store">
+                            <a href="#" style="text-decoration: none;" class="hsp">
+                                <img src="./images/spnb4_TheWitcher3WildHuntCompleteEdition.png" alt="" class="spimg-store">
+                                <p class="tensp-store">The Witcher 3: Wild Hunt - Complete Edition</p>
+                                <p class="giasp-store">500.000 đ</p>
+                            </a>
+                        </div>    
+                    </div>
+
+                    <div class="col-lg-12 d-flex pagination">
+                        <ul>
+                            <li><a href="#" style="text-decoration: none;" class="active-pag">1</a></li>
+                            <li><a href="#" style="text-decoration: none;" class="unactive-pag">2</a></li>
+                            <li><a href="#" style="text-decoration: none;" class="unactive-pag">3</a></li>
+                            <li><a href="#" style="text-decoration: none;" class="unactive-pag">4</a></li>
+                            <li><p>...</p></li>
+                            <li><a href="#" style="text-decoration: none;" class="unactive-pag">n</a></li>
+                            <li><a href="#" style="text-decoration: none;" class="unactive-pag">></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

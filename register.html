@@ -3,16 +3,18 @@
     <head> 
         <title>Duong's Shop</title>
         <link rel="icon" type="image/x-icon" href="./images/weblogo.png">
-
+        
         <!-- Required meta tags -->
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
         <link rel="stylesheet" href="./css/bootstrap.css">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/thuvien.css">
-        
+
         <script src="./js/jquery-3.7.0.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
         <script src="./js/script.js"></script>
 
         <!--Online-->
@@ -24,24 +26,64 @@
     <body>
         <div class="header">
             <div class="container">
-                <div class="row ">
+                <div class="row headbar-mobile">
+                    <div class="col-sm-12">
+                        <a href="./index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <form class="search-box">
+                                <input type="text" placeholder="Tìm kiếm...">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <div class="col login-wrapper">
+                            <div class="mtb10 row">
+                                <div class="circle-icon login"><img src="./feather/user.svg" alt="User" class=""></div>
+                                <div class="back tp">|</div>
+                                <a href="./cart.html"><div class="circle-icon back"><img src="./feather/shopping-cart.svg" alt="Cart" class=""></div></a>
+                            </div>
+                            <div class="inputlogin">
+                                <form class="col-lg-12 ilbody" style="margin-top: 2%; padding-left: 15px;" >
+                                    <div class="row">
+                                        <label for="tk" id="tk">Tài khoản:</label>
+                                    </div>
+                                    <div class="row">
+                                        <input height="10px" type="text" id="itk" name="itk" placeholder="Nhập tài khoản/Email...">
+                                    </div>
+                                    <div class="row">
+                                        <label for="mk" id="mk">Mật khẩu:</label>
+                                    </div>
+                                    <div class="row">
+                                        <input type="password" id="imk" name="imk" placeholder="Nhập mật khẩu...">
+                                    </div>
+                                    <div class="row linkdk">
+                                        <p id="linkdk">Bạn không có tài khoản??<a href="./register.html" id="linktodk">Đăng ký</a></p>
+                                    </div>
+                                    <button type="submit" id="blogin">Đăng nhập</button>
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="row headbar">
                     <div class="col-lg-3">
                         <a href="./index.html"><img src="./images/logo.png" alt="" class="logo"></a>
                     </div>
                     <div class="col-lg-6">
                         <div class="search-box">
                             <input type="text" placeholder="Tìm kiếm...">
-                            <button type="submit"><img src="./feather/search.svg"></button>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 login-wrapper">
                         <div class="mtb10 row">
                             <div class="circle-icon login"><img src="./feather/user.svg" alt="User" class=""></div>
                             <div class="back login tp"><p>Đăng nhập</p></div><div class="back tp">|</div>
                             <a href="./cart.html"><div class="circle-icon back"><img src="./feather/shopping-cart.svg" alt="Cart" class=""></div></a>
                         </div>
                         <div class="inputlogin">
-                            <form class="col-lg-12 ilbody" style="margin-top: 10px; padding-left: 15px;" >
+                            <form class="col-lg-12 ilbody" style="margin-top: 2%; padding-left: 15px;" >
                                 <div class="row">
                                     <label for="tk" id="tk">Tài khoản:</label>
                                 </div>
@@ -90,8 +132,35 @@
                             <li><a href="./support.html">Hỗ trợ</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-12"></div>
-                </div>   
+                    <div class="col-lg-12 menu-mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="dropdown-menu-mobile">
+                    <ul>
+                        <li class="menu-bot-line menu-padding"><a href="./index.html" >Trang chủ</a></li>
+                        <li class="menu-bot-line menu-padding"><a href="./store.html">Cửa hàng</a></li>
+                        <li class="dropdown-mobile menu-padding" id="theloai">
+                            <a>Thể Loại</a>
+                        </li>
+                        <li class="menu-bot-line">
+                            <div class="dropdown-content-mobile">
+                                <div><a href="./product.html">Hành động</a></div>
+                                <div><a href="./product.html">FPS</a></div>
+                                <div><a href="./product.html">Souls-like</a></div>
+                                <div><a href="./product.html">Side Scroller</a></div>
+                                <div><a href="./product.html">MMORPG</a></div>
+                                <div><a href="./product.html">Phiêu lưu</a></div>
+                                <div><a href="./product.html">Giả lập</a></div>
+                                <div><a href="./product.html">Thể thao</a></div>
+                                <div><a href="./product.html">Chiến thuật</a></div>
+                                <div><a href="./product.html">...</a></div>
+                            </div>
+                        </li>
+                        <li class="menu-bot-line menu-padding"><a href="./community.html">Cộng đồng</a></li>
+                        <li class="menu-bot-line menu-padding"><a href="./support.html">Hỗ trợ</a></li>
+                    </ul>
+                </div>           
             </div>
         </div>
         <div class="container mb">

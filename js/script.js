@@ -4,13 +4,7 @@ $(document).ready(function(){
       $(".inputlogin").slideToggle("slow");      
   })
 });
-//mo filter 
-$(document).ready(function(){
-  $(".mo-filter-tien").click(function(x){
-    $(".list-filter-tien").slideToggle("slow");
-    $(".mo-filter-tien i").toggleClass("fa-angle-up");
-  })
-});
+
 
 // open mobile menu
 $(document).ready(function(){
@@ -24,6 +18,20 @@ $(document).ready(function(){
   })
 });
 
+$(document).ready(function(){
+  $(".filter-icon-btn").click(function(){
+    $(".filter-wrapper-mobile").slideToggle("slow");      
+  })
+});
+
+
+//mo filter 
+$(document).ready(function(){
+  $(".mo-filter-tien").click(function(x){
+    $(".list-filter-tien").slideToggle("slow");
+    $(".mo-filter-tien i").toggleClass("fa-angle-up");
+  })
+}); 
 $(document).ready(function(){
   $(".mo-filter-tgphathanh").click(function(x){
     $(".list-filter-tgphathanh").slideToggle("slow");

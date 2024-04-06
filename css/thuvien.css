@@ -428,6 +428,9 @@ body{
     font-size: 12px;
     width: 180px;
 }
+.sp-mobile{
+    padding: 0 15px;
+}
 
 .midcol{
     border-right: 2px solid #5D5D5D ;
@@ -596,6 +599,11 @@ sup{
     margin: 30px 50px 15px -10px;
     font-size: 22px;
 }
+.tieude-store-mobile{
+    color: white;
+    margin: 30px 50px 0px -10px;
+    font-size: 20px;
+}
 
 .filter{
     margin-top: 77px;
@@ -605,11 +613,55 @@ sup{
     padding-top: 20px;
     border-bottom: 2px solid #424242;
 }
+.filter-wrapper-mobile{
+    padding-top: 20px;
+    border-bottom: 2px solid #424242;
+}
 .tendm-filter{
     margin-bottom: 13px;
     font-size: 20px;
     cursor: pointer;
     color: #969696;
+}
+.tendm-filter-mobile{
+    margin-bottom: 13px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #969696;
+}
+
+.store-body-mobile{
+    display: none;    
+}
+
+.filter-mobile{
+    padding: 10px;
+    color: white;
+    padding-top: 0px;
+}
+.filter-wrapper-mobile{
+    display: none;
+}
+.filter_icon{
+    height: 16px;
+    display: flex;
+    justify-content: right;
+}
+.filter_icon p{
+    height: 16px;
+    display: flex;
+    vertical-align: center;
+    color: #919191;
+    font-weight: bold;
+}
+.filter_icon i{
+    margin-top: 2px;
+    color: #919191;
+    font-size: 16px;
+    bottom: 0;
+    display: none;
+    cursor: pointer;
+    margin-left: 5px;
 }
 
 .mo-filter-tien:hover .tendm-filter{
@@ -636,6 +688,21 @@ sup{
 .mo-filter-nentang:hover i{
     color: white;
 }
+/* Mobile */
+.mo-filter-tien:hover .tendm-filter-mobile{
+    color: white;
+}
+.mo-filter-tgphathanh:hover .tendm-filter-mobile{
+    color: white;
+}
+.mo-filter-theloai:hover .tendm-filter-mobile{
+    color: white;
+}
+.mo-filter-nentang:hover .tendm-filter-mobile{
+    color: white;
+}
+
+
 
 .list-filter-tien{
     display: none;
@@ -676,6 +743,17 @@ i.fa {
 }
 .arrow i{
     color: #969696;
+}
+/* Mobile */
+.arrow-mobile{
+    float: right;
+    align-content: center;
+    margin-bottom: 13px;
+}
+.arrow-mobile i{
+    color: #969696;
+    display: flex;
+    justify-content: right;
 }
 
 .pagination{
@@ -752,6 +830,22 @@ i.fa {
     .main-slider-mobile{
         display: block;
     }
+    #dk-ho{
+        margin-right: 0px;
+    }
+    .store-body{
+        display: none;
+    }
+    .filter_icon i{
+        display: block;
+    }
+    .store-body{
+        display: none;
+    }
+    .store-body-mobile{
+        display: block;    
+    }
+
 }
     
 /* tablets */
@@ -776,6 +870,15 @@ i.fa {
     }
     .headbar-mobile{
         display: block ;
+    }
+    #dk-ho{
+        margin-right: 0px;
+    }
+    .store-body{
+        display: none;
+    }
+    .store-body-mobile{
+        display: block;    
     }
 }
 
