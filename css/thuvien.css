@@ -1000,6 +1000,91 @@ i.fa {
     text-decoration: underline;
     cursor: pointer;
 }
+/* community.html */
+.comm-box{
+    background-color: #3e3e3e;
+    border-radius: 10px;
+}
+.comm-box-wrapper{
+    margin: 10px;
+    width: 100%;
+}
+.comm-img{
+    border-right: 4px solid #555;
+}
+.comm-img img{
+    height: 150px;
+    border-radius: 10px 0px 0px 10px;
+}
+.title-comm{
+    color: white;
+    margin: 15px 10px 0px 0px;
+    font-size: 16px;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    bottom: 0;
+    border-bottom: 2px solid #555;
+}
+
+.comm-info{
+    width: 100%;
+}
+.info-comm{
+    margin: 5px 10px 0px 0px;
+    font-size: 14px;
+    height: 70px;
+    padding-bottom: 5px;
+    color: #b5b5b5;
+    width: 100%;
+    word-wrap:break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* mobile **************************************/
+.comm-mobile{
+    display: none;
+}
+.comm-box-wrapper-mobile{
+    padding: 10px 20px auto;
+    margin-bottom: 15px;
+}
+.tieude-comm-mobile h3{
+    color: white;
+    margin: 30px 50px 15px 15px;
+    font-size: 24px;
+}
+
+.comm-img-mobile img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.tensp-comm-mobile{
+    color: white;
+    margin: 15px 0px 0px 0px;
+    font-size: 16px;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-bottom: 2px solid #555;
+}
+
+.info-comm-mobile{
+    margin: 0px auto;
+    font-size: 14px;
+    height: 60px;
+    padding-bottom: 15px;
+    color: #b5b5b5;
+    width: 100%;
+    word-wrap:break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.bottom-comm{
+    margin-top: 10px;
+}
+
 
 /* điện thoại *****************************************************/
 @media (max-width: 767px) {
@@ -1052,6 +1137,12 @@ i.fa {
         display: none;
     }
     .cart-mobile{
+        display: block;
+    }
+    .comm{
+        display: none;
+    }
+    .comm-mobile{
         display: block;
     }
 }
