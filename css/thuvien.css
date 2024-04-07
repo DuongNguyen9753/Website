@@ -800,6 +800,206 @@ i.fa {
     font-weight: bold;
 }
 
+/* support.html ****************************************************/
+#htemail,#ht-ho,#ht-ten{
+    width: 100%;
+    border-radius: 6px;
+    outline-color:invert;
+    padding: 0px 10px;
+    height: 38px;
+    background-color: #32353C;
+    border: 1px solid #32353C;
+    color: white;
+}
+#ht-ho{
+    margin-right: 10px;
+}
+#ht-btn{    
+    width: 125px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.ht-vande{
+    width: 100%;
+    height: 150px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #32353C;
+    border-radius: 10px;
+    background-color: #32353C;
+    font-size: 14px;
+    resize: none;
+    color: white;
+}
+.ten-dm-ht{
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    padding: 40px;
+}
+/* cart.html ********************************************************/
+.cart-box{
+    background-color: #3e3e3e;
+    border-radius: 10px;
+}
+.cart-box-wrapper{
+    margin: 10px;
+}
+.cart-img{
+    border-right: 4px solid #555;
+}
+.cart-img img{
+    height: 150px;
+    border-radius: 10px 0px 0px 10px;
+}
+.tensp-cart{
+    color: white;
+    margin: 15px 10px 0px 0px;
+    font-size: 16px;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    bottom: 0;
+    border-bottom: 2px solid #555;
+}
+.giasp-cart{
+    color: #b5b5b5;
+    font-size: 14px;
+    margin-top: 17px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+.cart-info{
+    width: 100%;
+}
+.infosp-cart{
+    margin: 5px 10px 0px 0px;
+    font-size: 14px;
+    height: 70px;
+    padding-bottom: 5px;
+    color: #b5b5b5;
+    max-width: 630px;
+    word-wrap:break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.xoa-cart{
+    position: absolute;
+    bottom: 3px;
+    right: 20px;
+    color: #b5b5b5;
+    font-size: 12px;
+}
+.xoa-cart:hover{
+    position: absolute;
+    color: white;
+    text-decoration: underline;
+    font-size: 12px;
+    cursor: pointer;
+}
+.tendm-thanhtoan-cart{
+    color: white;
+    font-size: 26px;
+}
+.money-cart{
+    color: white;
+    text-align: right;
+    font-size: 14px;
+}
+.text-cart{
+    color: white;
+    font-size: 14px;
+}
+.phi-cart{
+    padding: 5px 15px;
+}
+.thue-cart{
+    padding: 5px 15px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #555;
+}
+.tong-cart{
+    padding: 5px 15px;
+}
+.thanhtoan-btn button{
+    margin: 5px 15px auto;
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:#18181C;
+    border: #18181C;
+}
+.thanhtoan-btn button:hover{
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:#2d2d2d;
+    border: #2d2d2d;
+    color: white;
+}
+/*mobile*/
+.cart-mobile{
+    display: none;
+}
+.cart-box-wrapper-mobile{
+    padding: 10px 20px auto;
+    margin-bottom: 15px;
+}
+.tieude-cart-mobile h3{
+    color: white;
+    margin: 30px 50px 15px 15px;
+    font-size: 24px;
+}
+
+.cart-img-mobile img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.tensp-cart-mobile{
+    color: white;
+    margin: 15px 0px 0px 0px;
+    font-size: 16px;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-bottom: 2px solid #555;
+}
+.giasp-cart-mobile{
+    color: #b5b5b5;
+    font-size: 14px;
+    margin-top: 17px;
+    position: absolute;
+    bottom: 130px;
+    right: 20px;
+}
+.infosp-cart-mobile{
+    margin: 0px auto;
+    font-size: 14px;
+    height: 40px;
+    padding-bottom: 5px;
+    color: #b5b5b5;
+    width: 100%;
+    word-wrap:break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.xoa-cart-mobile{
+    float: right;
+    bottom: 3px;
+    right: 20px;
+    color: #b5b5b5;
+    font-size: 12px;
+}
+.xoa-cart-mobile:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /* điện thoại *****************************************************/
 @media (max-width: 767px) {
@@ -845,7 +1045,15 @@ i.fa {
     .store-body-mobile{
         display: block;    
     }
-
+    #ht-ho{
+        margin-right: 0px;
+    }
+    .cart{
+        display: none;
+    }
+    .cart-mobile{
+        display: block;
+    }
 }
     
 /* tablets */
@@ -879,6 +1087,9 @@ i.fa {
     }
     .store-body-mobile{
         display: block;    
+    }
+    #ht-ho{
+        margin-right: 0px;
     }
 }
 

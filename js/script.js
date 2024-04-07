@@ -17,7 +17,7 @@ $(document).ready(function(){
     $(".dropdown-content-mobile").slideToggle("slow");      
   })
 });
-
+// mo filter mobile
 $(document).ready(function(){
   $(".filter-icon-btn").click(function(){
     $(".filter-wrapper-mobile").slideToggle("slow");      
