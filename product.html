@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>Duong's Shop</title>
+        <link rel="icon" type="image/x-icon" href="./images/weblogo.png">
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/thuvien.css">
+        
+        <script src="./js/jquery-3.7.0.min.js"></script>
+        <script src="./js/script.js"></script>
+
+        <!-- slider Plugin-->
+        <link rel="stylesheet" href="./css/flickity.css" media="screen">
+        <script src="./js/flickity.pkgd.min.js"></script>
+
+        <!--Online-->
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <script src="https://kit.fontawesome.com/805c36561d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>       
+    </head>
+    <body>
+        <!--Header-->
+        <div class="header">
+            <div class="container">
+                <div class="row headbar-mobile">
+                    <div class="col-sm-12">
+                        <a href="./index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <form class="search-box">
+                                <input type="text" placeholder="Tìm kiếm...">
+                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <div class="col login-wrapper">
+                            <div class="mtb10 row">
+                                <div class="circle-icon login"><img src="./feather/user.svg" alt="User" class=""></div>
+                                <div class="back tp">|</div>
+                                <a href="./cart.html"><div class="circle-icon back"><img src="./feather/shopping-cart.svg" alt="Cart" class=""></div></a>
+                            </div>
+                            <div class="inputlogin">
+                                <form class="col-lg-12 ilbody" style="margin-top: 2%; padding-left: 15px;" >
+                                    <div class="row">
+                                        <label for="tk" id="tk">Tài khoản:</label>
+                                    </div>
+                                    <div class="row">
+                                        <input height="10px" type="text" id="itk" name="itk" placeholder="Nhập tài khoản/Email...">
+                                    </div>
+                                    <div class="row">
+                                        <label for="mk" id="mk">Mật khẩu:</label>
+                                    </div>
+                                    <div class="row">
+                                        <input type="password" id="imk" name="imk" placeholder="Nhập mật khẩu...">
+                                    </div>
+                                    <div class="row linkdk">
+                                        <p id="linkdk">Bạn không có tài khoản??<a href="./register.html" id="linktodk">Đăng ký</a></p>
+                                    </div>
+                                    <button type="submit" id="blogin">Đăng nhập</button>
+                                </form> 
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <div class="row headbar">
+                    <div class="col-lg-3">
+                        <a href="./index.html"><img src="./images/logo.png" alt="" class="logo"></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="search-box">
+                            <input type="text" placeholder="Tìm kiếm...">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 login-wrapper">
+                        <div class="mtb10 row">
+                            <div class="circle-icon login"><img src="./feather/user.svg" alt="User" class=""></div>
+                            <div class="back login tp"><p>Đăng nhập</p></div><div class="back tp">|</div>
+                            <a href="./cart.html"><div class="circle-icon back"><img src="./feather/shopping-cart.svg" alt="Cart" class=""></div></a>
+                        </div>
+                        <div class="inputlogin">
+                            <form class="col-lg-12 ilbody" style="margin-top: 2%; padding-left: 15px;" >
+                                <div class="row">
+                                    <label for="tk" id="tk">Tài khoản:</label>
+                                </div>
+                                <div class="row">
+                                    <input height="10px" type="text" id="itk" name="itk" placeholder="Nhập tài khoản/Email...">
+                                </div>
+                                <div class="row">
+                                    <label for="mk" id="mk">Mật khẩu:</label>
+                                </div>
+                                <div class="row">
+                                    <input type="password" id="imk" name="imk" placeholder="Nhập mật khẩu...">
+                                </div>
+                                <div class="row linkdk">
+                                    <p id="linkdk">Bạn không có tài khoản??<a href="./register.html" id="linktodk">Đăng ký</a></p>
+                                </div>
+                                <button type="submit" id="blogin">Đăng nhập</button>
+                            </form> 
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="thanhmenu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 menu">
+                        <ul>
+                            <li><a href="./index.html" >Trang chủ</a></li>
+                            <li><a href="./store.html">Cửa hàng</a></li>
+                            <li class="dropdown" id="theloai">
+                                <a href="#">Thể Loại</a>
+                                <div class="dropdown-content">
+                                    <a href="./categories.html">Hành động</a>
+                                    <a href="./categories.html">FPS</a>
+                                    <a href="./categories.html">Souls-like</a>
+                                    <a href="./categories.html">Side Scroller</a>
+                                    <a href="./categories.html">MMORPG</a>
+                                    <a href="./categories.html">Phiêu lưu</a>
+                                    <a href="./categories.html">Giả lập</a>
+                                    <a href="./categories.html">Thể thao</a>
+                                    <a href="./categories.html">Chiến thuật</a>
+                                    <a href="./categories.html">...</a>
+                                </div>
+                            </li>
+                            <li><a href="./community.html">Cộng đồng</a></li>
+                            <li><a href="./support.html">Hỗ trợ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 menu-mobile">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                <div class="dropdown-menu-mobile">
+                    <ul>
+                        <li class="menu-bot-line menu-padding"><a href="./index.html" >Trang chủ</a></li>
+                        <li class="menu-bot-line menu-padding"><a href="./store.html">Cửa hàng</a></li>
+                        <li class="dropdown-mobile menu-padding" id="theloai">
+                            <a>Thể Loại</a>
+                        </li>
+                        <li class="menu-bot-line">
+                            <div class="dropdown-content-mobile">
+                                <div><a href="./categories.html">Hành động</a></div>
+                                <div><a href="./categories.html">FPS</a></div>
+                                <div><a href="./categories.html">Souls-like</a></div>
+                                <div><a href="./categories.html">Side Scroller</a></div>
+                                <div><a href="./categories.html">MMORPG</a></div>
+                                <div><a href="./categories.html">Phiêu lưu</a></div>
+                                <div><a href="./categories.html">Giả lập</a></div>
+                                <div><a href="./categories.html">Thể thao</a></div>
+                                <div><a href="./categories.html">Chiến thuật</a></div>
+                                <div><a href="./categories.html">...</a></div>
+                            </div>
+                        </li>
+                        <li class="menu-bot-line menu-padding"><a href="./community.html">Cộng đồng</a></li>
+                        <li class="menu-bot-line menu-padding"><a href="./support.html">Hỗ trợ</a></li>
+                    </ul>
+                </div>           
+            </div>
+        </div>
+        <!--Body-->
+        <div class="container mb">
+            <!--PC-->
+            <div class="row product">
+                <div class="col-lg-12 tieude-product">
+                    <h2>Mega Man 11 (Tên của game*)</h2>
+                </div>  
+                <div class="col-lg-8">  
+                    <div class="main-product-mobile">
+                        <div>
+                            <div class="product-banner" data-flickity='{ 
+                                "cellAlign": "left", "draggable": true, 
+                                "wrapAround": true}'>
+                                <div class="cell">
+                                    <div class="item active brslider-product">
+                                        <img src="./images/product_img1.png">
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <div class="item active brslider-product">
+                                        <img src="./images/product_img2.png">
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <div class="item active brslider-product">
+                                        <img src="./images/product_img3.png">
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <div class="item active brslider-product">
+                                        <img src="./images/product_img4.png">
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <div class="item active brslider-product">
+                                        <img src="./images/product_img5.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-product">
+                            <p>
+                                (Thông tin sản phẩm*) Mega Man đã trở lại! Mục mới nhất trong loạt phim mang tính biểu tượng này kết hợp hành động nền tảng 2D cổ điển, 
+                                đầy thử thách với một cái nhìn mới mẻ. 
+                                Phong cách hình ảnh mới tuyệt vời làm mới màu sắc mang tính biểu tượng của Series, 
+                                kết hợp môi trường vẽ bằng tay với các mô hình nhân vật 3D chi tiết.
+                                <br/>
+                                <br/>
+                                Để cứu ngày hôm nay, 
+                                Blue Bomber phải chiến đấu với Robot Masters và lấy vũ khí mạnh mẽ của họ cho chính mình, 
+                                điều này bây giờ thay đổi sự xuất hiện của anh hùng với mức độ chi tiết mới. 
+                                Hệ thống Double Gear mới mang tính sáng tạo cho phép bạn tăng tốc độ và sức mạnh của Mega Man để tạo ra một vòng xoắn mới trong gameplay đầy thỏa mãn mà Series được biết đến.
+                                <br/>
+                                <br/>
+                                Một loạt các chế độ khó khăn làm cho đây là cơ hội hoàn hảo để trải nghiệm Mega Man lần đầu tiên!
+                                <br/>
+                                <br/>
+                                Mega Man 11 cũng có một loạt các chế độ bổ sung bao gồm thử nghiệm thời gian, nhiệm vụ, 
+                                bảng xếp hạng toàn cầu, một bộ sưu tập nghệ thuật khái niệm, và nhiều hơn nữa!
+                            </p>
+                        </div>
+                        <div class="ycht-product">
+                            Yêu cầu hệ thống:
+                        </div>
+                        <div class="row">
+                            <div class="col ycht-toithieu">
+                                <div class="row-ycht">
+                                    Cấu hình tối thiểu:
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Phiên bản hệ điều hành:</div>
+                                    <div>Windows 10 (64-bit)</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">CPU:</div>
+                                    <div>Intel Core i5-3470 3.20GHz</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Bộ nhớ:</div>
+                                    <div>4 GB RAM</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">GPU:</div>
+                                    <div>GeForce GTX 650</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Lưu trữ:</div>
+                                    <div>2 GB</div>
+                                </div>
+                            </div>
+                            <div class="col ycht-denghi">
+                                <div class="row-ycht">
+                                    Cấu hình đề nghị:
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Phiên bản hệ điều hành:</div>
+                                    <div>Windows 10 (64-bit)</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">CPU:</div>
+                                    <div>Intel Core i5-4460 3.20GHz</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Bộ nhớ:</div>
+                                    <div>4 GB RAM</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">GPU:</div>
+                                    <div>GeForce GTX 740</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Lưu trữ:</div>
+                                    <div>3 GB</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+                <div class="col-lg-4 buymenu-product">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-11">
+                        <div class="product-img">
+                            <img src="./images/product_sideimg1.png" alt="">
+                        </div>
+                        <div class="gia-product">
+                            400.000 đ
+                        </div>
+                        <div class="sideinfo-product">
+                            <p>
+                                Để cứu ngày hôm nay, 
+                                Blue Bomber phải chiến đấu với Robot Masters và lấy vũ khí mạnh mẽ của họ cho chính mình, 
+                                điều này bây giờ thay đổi sự xuất hiện của anh hùng với mức độ chi tiết mới. 
+                                Hệ thống Double Gear mới mang tính sáng tạo cho phép bạn tăng tốc độ và sức mạnh của Mega Man 
+                                để tạo ra một vòng xoắn mới trong gameplay đầy thỏa mãn mà loạt phim được biết đến.
+                            </p>
+                        </div>
+                        <div class="buy-btn-product">
+                            <button type="submit">Mua ngay</button>
+                        </div>
+                        <div class="cart-btn-product">
+                            <button type="submit">Cho vào giỏ hàng</button>
+                        </div>
+                        <div class="gameinfo">
+                            <div class="row row-gameinfo">
+                                <div class="col gameinfo-dm">Đánh giá:</div>
+                                <div class="col gameinfo-info">Rất tích cực</div>
+                            </div>
+                            <div class="row row-gameinfo">
+                                <div class="col gameinfo-dm">Ngày phát hành:</div>
+                                <div class="col gameinfo-info">03/10/2018</div>
+                            </div>
+                            <div class="row row-gameinfo">
+                                <div class="col gameinfo-dm">Nhà phát triển:</div>
+                                <div class="col gameinfo-info">CAPCOM CO., LTD.</div>
+                            </div>
+                            <div class="row row-gameinfo">
+                                <div class="col gameinfo-dm">Nhà phát hành:</div>
+                                <div class="col gameinfo-info">CAPCOM CO., LTD.</div>
+                            </div>
+                            <div class="row row-gameinfo">
+                                <div class="col gameinfo-dm">Thể loại:</div>
+                                <div class="col gameinfo-info">
+                                    Hành động, Side Scoller, Phiêu lưu
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Mobile/Tablet-->
+            <div class="row product-mobile">
+                <div class="col-lg-12 tieude-product">
+                    <h2>Mega Man 11<br> (Tên của game*)</h2>
+                </div>  
+                <div class="col-lg-12 buymenu-product">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-11">
+                        <div class="product-img">
+                            <img src="./images/product_sideimg1.png" alt="">
+                        </div>
+                        <div class="gia-product">
+                            400.000 đ
+                        </div>
+                        <div class="sideinfo-product">
+                            <p>
+                                Để cứu ngày hôm nay, 
+                                Blue Bomber phải chiến đấu với Robot Masters và lấy vũ khí mạnh mẽ của họ cho chính mình, 
+                                điều này bây giờ thay đổi sự xuất hiện của anh hùng với mức độ chi tiết mới. 
+                                Hệ thống Double Gear mới mang tính sáng tạo cho phép bạn tăng tốc độ và sức mạnh của Mega Man 
+                                để tạo ra một vòng xoắn mới trong gameplay đầy thỏa mãn mà loạt phim được biết đến.
+                            </p>
+                        </div>
+                        <div class="buy-btn-product">
+                            <button type="submit">Mua ngay</button>
+                        </div>
+                        <div class="cart-btn-product">
+                            <button type="submit">Cho vào giỏ hàng</button>
+                        </div>
+                        <div class="gameinfo">
+                            <div class="row row-gameinfo">
+                                <div class="col gameinfo-dm">Đánh giá:</div>
+                                <div class="col gameinfo-info">Rất tích cực</div>
+                            </div>
+                            <div class="row row-gameinfo">
+                                <div class="col gameinfo-dm">Ngày phát hành:</div>
+                                <div class="col gameinfo-info">03/10/2018</div>
+                            </div>
+                            <div class="row row-gameinfo">
+                                <div class="col gameinfo-dm">Nhà phát triển:</div>
+                                <div class="col gameinfo-info">CAPCOM CO., LTD.</div>
+                            </div>
+                            <div class="row row-gameinfo">
+                                <div class="col gameinfo-dm">Nhà phát hành:</div>
+                                <div class="col gameinfo-info">CAPCOM CO., LTD.</div>
+                            </div>
+                            <div class="row row-gameinfo">
+                                <div class="col gameinfo-dm">Thể loại:</div>
+                                <div class="col gameinfo-info">
+                                    Hành động, Side Scoller, Phiêu lưu
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12"> 
+                    <div class="main-product-mobile">
+                        <div>
+                            <div class="product-banner" data-flickity='{ 
+                                "cellAlign": "left", "draggable": true, 
+                                "wrapAround": true}'>
+                                <div class="cell">
+                                    <div class="item active brslider-product">
+                                        <img src="./images/product_img1.png">
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <div class="item active brslider-product">
+                                        <img src="./images/product_img2.png">
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <div class="item active brslider-product">
+                                        <img src="./images/product_img3.png">
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <div class="item active brslider-product">
+                                        <img src="./images/product_img4.png">
+                                    </div>
+                                </div>
+                                <div class="cell">
+                                    <div class="item active brslider-product">
+                                        <img src="./images/product_img5.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-product">
+                            <p>
+                                (Thông tin sản phẩm*) Mega Man đã trở lại! Mục mới nhất trong loạt phim mang tính biểu tượng này kết hợp hành động nền tảng 2D cổ điển, 
+                                đầy thử thách với một cái nhìn mới mẻ. 
+                                Phong cách hình ảnh mới tuyệt vời làm mới màu sắc mang tính biểu tượng của Series, 
+                                kết hợp môi trường vẽ bằng tay với các mô hình nhân vật 3D chi tiết.
+                                <br/>
+                                <br/>
+                                Để cứu ngày hôm nay, 
+                                Blue Bomber phải chiến đấu với Robot Masters và lấy vũ khí mạnh mẽ của họ cho chính mình, 
+                                điều này bây giờ thay đổi sự xuất hiện của anh hùng với mức độ chi tiết mới. 
+                                Hệ thống Double Gear mới mang tính sáng tạo cho phép bạn tăng tốc độ và sức mạnh của Mega Man để tạo ra một vòng xoắn mới trong gameplay đầy thỏa mãn mà Series được biết đến.
+                                <br/>
+                                <br/>
+                                Một loạt các chế độ khó khăn làm cho đây là cơ hội hoàn hảo để trải nghiệm Mega Man lần đầu tiên!
+                                <br/>
+                                <br/>
+                                Mega Man 11 cũng có một loạt các chế độ bổ sung bao gồm thử nghiệm thời gian, nhiệm vụ, 
+                                bảng xếp hạng toàn cầu, một bộ sưu tập nghệ thuật khái niệm, và nhiều hơn nữa!
+                            </p>
+                        </div>
+                        <div class="ycht-product">
+                            Yêu cầu hệ thống:
+                        </div>
+                        <div class="row">
+                            <div class="col ycht-toithieu">
+                                <div class="row-ycht">
+                                    Cấu hình tối thiểu:
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Phiên bản hệ điều hành:</div>
+                                    <div>Windows 10 (64-bit)</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">CPU:</div>
+                                    <div>Intel Core i5-3470 3.20GHz</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Bộ nhớ:</div>
+                                    <div>4 GB RAM</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">GPU:</div>
+                                    <div>GeForce GTX 650</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Lưu trữ:</div>
+                                    <div>2 GB</div>
+                                </div>
+                            </div>
+                            <div class="col ycht-denghi">
+                                <div class="row-ycht">
+                                    Cấu hình đề nghị:
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Phiên bản hệ điều hành:</div>
+                                    <div>Windows 10 (64-bit)</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">CPU:</div>
+                                    <div>Intel Core i5-4460 3.20GHz</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Bộ nhớ:</div>
+                                    <div>4 GB RAM</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">GPU:</div>
+                                    <div>GeForce GTX 740</div>
+                                </div>
+                                <div class="row-ycht">
+                                    <div class="ycht-dm">Lưu trữ:</div>
+                                    <div>3 GB</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footer">
+            <div class="container">
+                <div class="col-lg-12 bline">
+                    <a href="./index.html"><img src="./images/logo.png" alt="" class="logof"></a>
+                    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+                </div>
+                <div class="col-lg-12 footertext">
+                    Địa chỉ: 2 Đ. Trường Sa, Phường 17, Bình Thạnh, Thành phố Hồ Chí Minh 70000, Việt Nam<br/>
+                    SĐT: 074375809<br/>
+                    Liên hệ với chúng tôi:
+                    <div class="col-lg-12" style="padding-left: 0px;">
+                        <a href="https://www.facebook.com/profile.php?id=100071299081475"><img src="./images/iconfacebook.png" alt="" class="iconlh"></a>
+                        <a href="https://youtube.com"><img src="./images/iconyoutube.png" alt="" class="iconlh"></a>
+                        <a href="https://github.com/DuongNguyen9753"><img src="./images/icongithub.png" alt="" class="iconlh"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

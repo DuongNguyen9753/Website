@@ -5,7 +5,6 @@ $(document).ready(function(){
   })
 });
 
-
 // open mobile menu
 $(document).ready(function(){
   $(".menu-mobile").click(function(){

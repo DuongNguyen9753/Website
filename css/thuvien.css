@@ -659,7 +659,6 @@ sup{
     color: #919191;
     font-size: 16px;
     bottom: 0;
-    display: none;
     cursor: pointer;
     margin-left: 5px;
 }
@@ -1084,6 +1083,106 @@ i.fa {
 .bottom-comm{
     margin-top: 10px;
 }
+/* product.html ****************************************************/
+.tieude-product{
+    color: white;
+    margin: 30px 50px 15px -10px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-banner{
+    margin-bottom: 50px;
+}
+.product-banner .cell{
+    width: 100%;
+}
+.cell video{
+    border-radius: 15px;
+}
+.product-img img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.brslider-product img{
+    border-radius: 5px;
+    width: 100%;
+}
+.info-product p{
+    font-size: 16px;
+    color: #c2c2c2;
+    padding: 5px 0px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #919191;
+}
+.ycht-product{
+    color: white;
+    font-size: 22px;
+}
+.row-ycht{
+    margin: 20px 0px;
+}
+.ycht-toithieu{
+    border-right: 2px solid #919191;
+}
+.ycht-denghi{
+    color: white;
+}
+.ycht-dm{
+    color: #919191;
+}
+.ycht-toithieu{
+    color: white;
+}
+
+.gia-product{
+    color: white;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+.sideinfo-product p{
+    font-size: 12px;
+    color: #c2c2c2;
+    padding: 5px 10px;
+}
+.buy-btn-product button{
+    width: 100%;
+    border-radius: 7px;
+    height: 50px;
+    border: white;
+    margin: 5px 0px;
+    font-size: 16px;
+}
+.cart-btn-product button{
+    color: white;
+    width: 100%;
+    border-radius: 7px;
+    height: 50px;
+    background-color: #232323;
+    border: 1px solid #fff;
+    margin: 5px 0px;
+    font-size: 16px;
+}
+.gameinfo .row{
+    margin: 0px 0px;
+}
+.gameinfo .col{
+    padding: 0px;
+}
+.row-gameinfo{
+    border-bottom: 2px solid #6d6d6d;
+    padding: 10px 0px;
+}
+.gameinfo-dm{
+    color: #919191;
+}
+.gameinfo-info{
+    color: white;
+    text-align: right;
+}
+.product-mobile{
+    display: none;
+}
 
 
 /* điện thoại *****************************************************/
@@ -1145,6 +1244,12 @@ i.fa {
     .comm-mobile{
         display: block;
     }
+    .product{
+        display: none;
+    }
+    .product-mobile{
+        display: block;
+    }
 }
     
 /* tablets */
@@ -1182,6 +1287,13 @@ i.fa {
     #ht-ho{
         margin-right: 0px;
     }
+    .product{
+        display: none;
+    }
+    .product-mobile{
+        display: block;
+    }
+
 }
 
 /* PC */
