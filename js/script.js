@@ -1,9 +1,31 @@
+function signup(event){
+  event.preventDefault();
+  var username = document.getElementById("dktk").value;
+  var email = document.getElementById("dkemail").value;
+  var password = document.getElementById("dkmk").value;
+
+  var user = {
+    username: username,
+    email: email,
+    password: password,
+  }
+
+  var json = JSON.stringify(user);
+  localStorage.setItem(username, json);
+  alert("Đăng ký thành công!!");
+}
+
+
+
 //login input
 $(document).ready(function(){
     $(".login").click(function(){
       $(".inputlogin").slideToggle("slow");      
   })
 });
+
+//
+
 
 // open mobile menu
 $(document).ready(function(){
@@ -52,9 +74,9 @@ $(document).ready(function(){
   })
 });
 
-$('.phobien-slider').flickity({
-  // options
-  cellAlign: 'center',
-  contain: true
-});
+// Get the button:
+let mybutton = document.getElementById("topBtn");
 
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}

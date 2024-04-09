@@ -168,7 +168,7 @@
             <div class="row">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <form class="regform">
+                    <form onsubmit="signup()" class="regform">
                         <div class="row">
                             <label id="textreg" for="dkemail">Email<sup aria-hidden="true">*</sup>:</label>
                         </div>
@@ -215,8 +215,8 @@
                             <input type="checkbox" name="checkage" id="checkage" required>
                             <label id="checkage-text">Tôi 13 tuổi hoặc lớn hơn và đồng ý với điều khoản và chính sách bảo mật</label>
                         </div>
-                        <div class="row dk-btn-row">
-                            <button type="submit" id="dk-btn" >Đăng ký</button>
+                        <div class="dk-btn-row">
+                            <button id="dk-btn">Đăng ký</button>
                         </div>
                     </form>
                 </div>
@@ -227,7 +227,6 @@
             <div class="container">
                 <div class="col-lg-12 bline">
                     <a href="./index.html"><img src="./images/logo.png" alt="" class="logof"></a>
-                    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
                 </div>
                 <div class="col-lg-12 footertext">
                     Địa chỉ: 2 Đ. Trường Sa, Phường 17, Bình Thạnh, Thành phố Hồ Chí Minh 70000, Việt Nam<br/>
